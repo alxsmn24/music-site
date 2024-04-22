@@ -1,0 +1,235 @@
+.light {
+    background-image: url('../assets/day.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%+8px;
+    height: 100vh;
+    margin: -8px;
+    transition: background-image 0.5s ease;
+}
+
+.dark {
+    background-image: url('../assets/night.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%+8px;
+    height: 100vh;
+    margin: -8px;
+    transition: background-image 0.5s ease;
+}
+
+.music-icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.music-icon:hover {
+    opacity: 0.7;
+    transform: scale(1.1);
+}
+
+header {
+    mix-blend-mode: multiply;
+    width: 100%;
+    position: relative;
+}
+
+.theme-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.l-circle {
+    color:blueviolet;
+    margin-left: -5px;
+    float: left;
+}
+
+.d-circle {
+    color:blueviolet;
+    margin-right: -5px;
+    float: right;
+}
+
+.settings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.settings-card {
+    background-color: black;
+    width: 300px;
+    opacity: 0.3;
+    border-radius: 25px;
+}
+
+.settings-pick {
+    position: relative;
+}
+
+.settings-pick .active {
+    background-color: darkmagenta;
+    border: solid 1px yellow;
+    color:white;
+    opacity: 1;
+}
+
+.btn-sounds {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 45%;
+    height: 50px;
+    font-size: large;
+    border-radius: 25px;
+    transition: all 500ms ease;
+}
+
+.btn-sounds:hover,
+.btn-sounds:active,
+.btn-timer:hover,
+.btn-timer:active {
+    opacity: 0.8;
+    color:blueviolet;
+}
+
+.btn-timer {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 45%;
+    height: 50px;
+    font-size: large;
+    border-radius: 25px;
+    transition: all 500ms ease;
+}
+
+.main-card {
+    margin-top: 70px;
+    margin-inline: 10px;
+    margin-bottom: 10px;
+    min-height: 280px;
+    position: relative;
+}
+
+.soundscard-actve {
+    position: absolute;
+    opacity: 1;
+    z-index: 1;
+}
+
+.timercard-actve {
+    position: absolute;
+    opacity: 1;
+    z-index: 1;
+}
+
+.sounds-card {
+    position: absolute;
+    opacity: 0;
+    z-index: 0;
+}
+
+.timer-card {
+    position: absolute;
+    opacity: 0;
+    z-index: 0;
+}
+
+.sounds, .timer {
+    color:white;
+    font-size: 25px;
+}
+
+.sounds {
+    text-align: center;
+}
+
+.sounds h2 {
+    margin: 5px;
+}
+
+.volume-slide input {
+    width: 60%;
+    margin: 10px;
+}
+
+.sounds button {
+    margin: 0px 5px;
+    padding: 10px;
+    height: 60px;
+    width: 60px;
+    font-size: 40px;
+    border-radius: 5px;
+    transition: all 500ms ease;
+}
+
+.sounds button:hover,
+.sounds button:active {
+    opacity: 0.8;
+    color:blueviolet;
+}
+
+.sounds .active {
+    background-color: darkmagenta;
+    border: solid 1px yellow;
+    color:white;
+    opacity: 1;
+}
+
+.sounds h3 {
+    margin: 5px;
+}
+
+.background-settings {
+    display: inline-block;
+    width: 100%;
+}
+.background-settings input {
+    width: 100%;
+}
+
+.background-volume {
+    width: 100%;
+}
+
+.background {
+    display: inline-block;
+    width: 50%;
+}
+
+.background p {
+    text-align: left;
+    margin: 0px;
+    margin-left: 10px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.timer-result {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+.timer-button {
+    border-radius: 5px;
+    width: 60px;
+    height: 25px;
+}
+
+.timer-input {
+    border-radius: 5px;
+    width: 30px;
+}
